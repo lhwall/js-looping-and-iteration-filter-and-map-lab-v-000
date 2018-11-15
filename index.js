@@ -14,3 +14,9 @@ function exactMatch(drivers, attribute){
   const newArray = drivers.filter(function(item) {return item[Object.keys(attribute)[0]] === attribute[Object.keys(attribute)[0]] })
   return newArray
 }
+
+function exactMatchToList(driver, attribute){
+  const newArray = drivers.filter(function(item) {return item[Object.keys(attribute)[0]] === attribute[Object.keys(attribute)[0]] })
+  const finalArray = newArray.map(function(item) {return item.name})
+  return finalArray
+}
