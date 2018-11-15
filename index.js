@@ -5,6 +5,8 @@ function driversWithRevenueOver(drivers, revenue){
 }
 
 function driverNamesWithRevenueOver(drivers, revenue){
-  const newArray = drivers.filter(function(item) {return item.name if item.revenue > revenue})
+  const newArray = drivers.filter(function(item) {
+    return item.name if item.revenue > revenue
+  end })
   return newArray
 }
